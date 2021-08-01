@@ -1,102 +1,136 @@
 .page {
   margin-left: 0;
+  margin-top: 18vw;
+}
+section {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  max-height: 100vh;
+}
+.form {
+  width: 95vw;
+  padding: 5vw 2vw 3vw;
+  border-radius: 0.6em;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  background-color: #ffb02b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  flex-direction: row-reverse;
+}
+.form input[type="text"] {
+  width: 74vw;
+  border-radius: 0.6em;
+  border: transparent;
+  outline: none;
+  font-style: italic;
+  color: #343a40;
+  padding: 0 7px;
+  font-size: 4vw;
+  order: -1;
+}
+.form input[type="submit"] {
+  border-radius: 0.6em;
+  background-color: rgb(52, 58, 64);
+  border: transparent;
+  color: white;
+  margin: 3vw;
+  font-size: 4vw;
+}
+.label{
+  font-size: 4vw;
+  order: 2;
+}
+.welcome-text {
+  height: 16vw;
+  text-align: center;
+  font-size: 3vw;
+  font-family: fantasy;
+}
+.welcome-text .heading {
+  font-size: 6vw;
+  color: #ffb02b;
+}
+.add-todo {
+  width: 100%;
+  border-radius: 0.6em;
+  background-color: rgb(52, 58, 64);
+  border: transparent;
+  color: white;
+  font-style: italic;
+  padding: 6px;
+}
+.bttn {
+  border-radius: 0.6em;
+  background-color: rgb(52, 58, 64);
+  border: transparent;
+  color: white;
+  padding: 0.5vw;
+  margin-left: 0.5vw;
+  cursor: pointer;
+  outline: none;
+}
+.home {
+  position: relative;
+}
+.home-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-background {
+  object-fit: cover;
+  height: 100vh;
+  opacity: 0.6;
+  z-index: -1;
+  /* background-image: url('/images/todo.png'); */
+}
+.filters {
+  text-align: center;
+  margin: 0.5vw 0 2vw;
+}
+.filter {
+  width: 25vw;
+  padding: 1vw;
+  margin: 1vw;
+}
+@media(min-width:400px){
+ .page{
+    margin: 14vw 10px 10px;
+ }
+
 }
 @media (min-width: 992px) {
   .page {
     margin-left: 17rem !important;
     margin: 3vw 10px 10px;
   }
-  section {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    max-height: 100vh;
-    /* align-items: space-around; */
-  }
   .form {
     width: 60vw;
     padding: 5vw;
-    border-radius: 0.6em;
-    cursor: pointer;
-    transition: all ease 0.3s;
-    background-color: #ffb02b;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    /* position: fixed;
-    top: 3vw;
-    left: 28vw; */
+    flex-wrap: nowrap;
+    flex-direction: row;
   }
   .form input[type="text"] {
     width: 70%;
-    border-radius: 0.6em;
-    border: transparent;
-    outline: none;
-    font-style: italic;
-    color: #343a40;
     padding: 0 15px;
+    font-size: 1.5vw;
+    order: 0;
   }
   .form input[type="submit"] {
-    border-radius: 0.6em;
-    background-color: rgb(52, 58, 64);
-    border: transparent;
-    color: white;
+    font-size: 1.5vw;
+    margin: 0;
   }
   label {
     color: #343a40;
     text-transform: uppercase;
   }
-  /* home */
-  .welcome-text {
-    height: 16vw;
-    text-align: center;
-    font-size: 3vw;
-    font-family: fantasy;
-  }
-  .welcome-text .heading {
-    font-size: 6vw;
-    color: #ffb02b;
-  }
-  .add-todo {
-    width: 100%;
-    border-radius: 0.6em;
-    background-color: rgb(52, 58, 64);
-    border: transparent;
-    color: white;
-    font-style: italic;
-    padding: 6px;
-  }
-  .bttn {
-    border-radius: 0.6em;
-    background-color: rgb(52, 58, 64);
-    border: transparent;
-    color: white;
-    padding: 0.5vw;
-    margin-left: 0.5vw;
-    cursor: pointer;
-    outline: none;
-  }
-  .home {
-    position: relative;
-  }
-  .home-text {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .home-background {
-    object-fit: cover;
-    height: 100vh;
-    opacity: 0.6;
-    z-index: -1;
-    /* background-image: url('/images/todo.png'); */
-  }
-  .filters {
-    text-align: center;
-    margin: 0.5vw 0 2vw;
-  }
+
   .filter {
-    width: 6vw;
+    width: 8vw;
   }
 }

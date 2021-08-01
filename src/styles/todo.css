@@ -1,24 +1,43 @@
-.todo-list{
-    padding: 0%;
+.todo-list {
+  padding: 0%;
 }
-.todo-item{
-    /* display: inline; */
-    padding: 10px;
-    
+.todo-item {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.6em;
+  margin-bottom: 5px;
+  color: white;
+  padding-left: 2vw;
+}
+.todo {
+  font-size: 20px;
+  margin: 0;
+  font-size: 4vw;
+}
+.teal {
+  background-color: teal !important;
+}
+.red {
+  background-color: tomato !important;
+}
+.bttn-group {
+  display: flex;
+  flex-direction: row;
+  width: 20vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .todo {
+    font-size: 2vw;
+  }
+  .bttn-group {
     display: flex;
-    justify-content: space-between;
-    border-radius: 0.6em;
-    margin-bottom: 5px;
-    color: white;
-    padding-left: 2vw;
-    
-}
-.todo{
-    font-size: 20px;
-}
-.teal{
-    background-color: teal !important;
-}
-.red{
-    background-color: tomato !important;
+    flex-direction: row;
+    width: 15vw;
+    /* justify-content: space-around; */
+    align-items: center;
+  }
 }

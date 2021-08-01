@@ -1,9 +1,5 @@
 import React from "react";
-import TodoList from './todo/todoList';
-import Form from "./form";
-import Filters from "./Filters";
 import Page from './Page';
-import { filter } from "minimatch";
 
 class TodoClass extends React.Component {
     state = {

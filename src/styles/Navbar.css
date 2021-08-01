@@ -1,5 +1,9 @@
-#sidebar{
-    height: 0;
+
+
+@media(min-width: 640px){
+  .img-fluid{
+    width: 5vw;
+  }
 }
 @media (min-width: 992px) {
     #sidebar {
@@ -10,6 +14,9 @@
       height: 100vh;
       display: flex;
       flex-direction: column;
+    }
+    .img-fluid{
+    width: 14vw;
     }
   }
   
