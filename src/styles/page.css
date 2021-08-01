@@ -1,0 +1,102 @@
+.page {
+  margin-left: 0;
+}
+@media (min-width: 992px) {
+  .page {
+    margin-left: 17rem !important;
+    margin: 3vw 10px 10px;
+  }
+  section {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    max-height: 100vh;
+    /* align-items: space-around; */
+  }
+  .form {
+    width: 60vw;
+    padding: 5vw;
+    border-radius: 0.6em;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    background-color: #ffb02b;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* position: fixed;
+    top: 3vw;
+    left: 28vw; */
+  }
+  .form input[type="text"] {
+    width: 70%;
+    border-radius: 0.6em;
+    border: transparent;
+    outline: none;
+    font-style: italic;
+    color: #343a40;
+    padding: 0 15px;
+  }
+  .form input[type="submit"] {
+    border-radius: 0.6em;
+    background-color: rgb(52, 58, 64);
+    border: transparent;
+    color: white;
+  }
+  label {
+    color: #343a40;
+    text-transform: uppercase;
+  }
+  /* home */
+  .welcome-text {
+    height: 16vw;
+    text-align: center;
+    font-size: 3vw;
+    font-family: fantasy;
+  }
+  .welcome-text .heading {
+    font-size: 6vw;
+    color: #ffb02b;
+  }
+  .add-todo {
+    width: 100%;
+    border-radius: 0.6em;
+    background-color: rgb(52, 58, 64);
+    border: transparent;
+    color: white;
+    font-style: italic;
+    padding: 6px;
+  }
+  .bttn {
+    border-radius: 0.6em;
+    background-color: rgb(52, 58, 64);
+    border: transparent;
+    color: white;
+    padding: 0.5vw;
+    margin-left: 0.5vw;
+    cursor: pointer;
+    outline: none;
+  }
+  .home {
+    position: relative;
+  }
+  .home-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .home-background {
+    object-fit: cover;
+    height: 100vh;
+    opacity: 0.6;
+    z-index: -1;
+    /* background-image: url('/images/todo.png'); */
+  }
+  .filters {
+    text-align: center;
+    margin: 0.5vw 0 2vw;
+  }
+  .filter {
+    width: 6vw;
+  }
+}
